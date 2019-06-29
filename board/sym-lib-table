@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name fpga_hat)(type Legacy)(uri /home/pi/fpga_hat/board/fpga_hat.lib)(options "")(descr ""))
+  (lib (name fpga_hat)(type Legacy)(uri ${KIPRJMOD}/fpga_hat.lib)(options "")(descr ""))
 )

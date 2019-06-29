@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:fpga_hat-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1263,4 +1264,389 @@ Text Label 2250 10350 0    50   ~ 0
 GP12_FPGA_~RST
 Text Label 1350 10450 2    50   ~ 0
 GP13_FPGA_CDONE
+$Comp
+L fpga_hat:iCE40-HX8k-BG121 U?
+U 1 1 5D2EFB1C
+P 1650 1150
+F 0 "U?" H 1550 1550 50  0000 L CNN
+F 1 "iCE40-HX8k-BG121" H 1500 -700 50  0000 L CNN
+F 2 "" H 1050 -2400 50  0001 C CNN
+F 3 "" H 1050 -2400 50  0001 C CNN
+	1    1650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_hat:iCE40-HX8k-BG121 U?
+U 2 1 5D2EFDB4
+P 2800 1150
+F 0 "U?" H 2700 1550 50  0000 L CNN
+F 1 "iCE40-HX8k-BG121" H 2650 -700 50  0001 L CNN
+F 2 "" H 2200 -2400 50  0001 C CNN
+F 3 "" H 2200 -2400 50  0001 C CNN
+	2    2800 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_hat:iCE40-HX8k-BG121 U?
+U 3 1 5D2EFFC6
+P 3900 1150
+F 0 "U?" H 3800 1550 50  0000 L CNN
+F 1 "iCE40-HX8k-BG121" H 3750 -700 50  0001 L CNN
+F 2 "" H 3300 -2400 50  0001 C CNN
+F 3 "" H 3300 -2400 50  0001 C CNN
+	3    3900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_hat:iCE40-HX8k-BG121 U?
+U 4 1 5D2F00A4
+P 5250 1150
+F 0 "U?" H 5150 1550 50  0000 L CNN
+F 1 "iCE40-HX8k-BG121" H 5100 -700 50  0001 L CNN
+F 2 "" H 4650 -2400 50  0001 C CNN
+F 3 "" H 4650 -2400 50  0001 C CNN
+	4    5250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_hat:iCE40-HX8k-BG121 U?
+U 5 1 5D2F03D9
+P 6750 1200
+F 0 "U?" H 6650 1600 50  0000 L CNN
+F 1 "iCE40-HX8k-BG121" H 6600 -650 50  0001 L CNN
+F 2 "" H 6150 -2350 50  0001 C CNN
+F 3 "" H 6150 -2350 50  0001 C CNN
+	5    6750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_hat:iCE40-HX8k-BG121 U?
+U 6 1 5D2F04F5
+P 8300 1150
+F 0 "U?" H 8200 1550 50  0000 L CNN
+F 1 "iCE40-HX8k-BG121" H 8150 -700 50  0001 L CNN
+F 2 "" H 7700 -2400 50  0001 C CNN
+F 3 "" H 7700 -2400 50  0001 C CNN
+	6    8300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 950  7900 950 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D2F8FD2
+P 7900 750
+F 0 "#PWR?" H 7900 600 50  0001 C CNN
+F 1 "+3V3" H 7915 923 50  0000 C CNN
+F 2 "" H 7900 750 50  0001 C CNN
+F 3 "" H 7900 750 50  0001 C CNN
+	1    7900 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 750  7900 950 
+Wire Wire Line
+	7950 1050 7850 1050
+Wire Wire Line
+	7950 1150 7850 1150
+Wire Wire Line
+	7950 1250 7850 1250
+Wire Wire Line
+	7950 1350 7850 1350
+Wire Wire Line
+	7950 1450 7850 1450
+Wire Wire Line
+	7950 1550 7850 1550
+Text Label 7850 1550 2    50   ~ 0
+GP8_SPI_~CS
+Text Label 7850 1450 2    50   ~ 0
+GP11_SPI_SCK
+Text Label 7850 1250 2    50   ~ 0
+GP10_SPI_MOSI
+Text Label 7850 1350 2    50   ~ 0
+GP9_SPI_MISO
+Text Label 7850 1050 2    50   ~ 0
+GP13_FPGA_CDONE
+Text Label 7850 1150 2    50   ~ 0
+GP12_FPGA_~RST
+Wire Wire Line
+	6350 950  6300 950 
+Wire Wire Line
+	6300 950  6300 750 
+Wire Wire Line
+	6300 950  6300 1050
+Wire Wire Line
+	6300 1050 6350 1050
+Connection ~ 6300 950 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D36E197
+P 6300 750
+F 0 "#PWR?" H 6300 600 50  0001 C CNN
+F 1 "+3V3" H 6315 923 50  0000 C CNN
+F 2 "" H 6300 750 50  0001 C CNN
+F 3 "" H 6300 750 50  0001 C CNN
+	1    6300 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 950  4750 950 
+Wire Wire Line
+	4750 950  4750 750 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D36E4BD
+P 4750 750
+F 0 "#PWR?" H 4750 600 50  0001 C CNN
+F 1 "+3V3" H 4765 923 50  0000 C CNN
+F 2 "" H 4750 750 50  0001 C CNN
+F 3 "" H 4750 750 50  0001 C CNN
+	1    4750 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 950  3450 950 
+Wire Wire Line
+	3450 950  3450 750 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D38204E
+P 3450 750
+F 0 "#PWR?" H 3450 600 50  0001 C CNN
+F 1 "+3V3" H 3465 923 50  0000 C CNN
+F 2 "" H 3450 750 50  0001 C CNN
+F 3 "" H 3450 750 50  0001 C CNN
+	1    3450 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 950  2350 950 
+Wire Wire Line
+	2350 950  2350 750 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D38C163
+P 2350 750
+F 0 "#PWR?" H 2350 600 50  0001 C CNN
+F 1 "+3V3" H 2365 923 50  0000 C CNN
+F 2 "" H 2350 750 50  0001 C CNN
+F 3 "" H 2350 750 50  0001 C CNN
+	1    2350 750 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 1450
+Wire Wire Line
+	1350 950  1300 950 
+Wire Wire Line
+	1300 950  1300 750 
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5D3AB0CB
+P 1300 750
+F 0 "#PWR?" H 1300 600 50  0001 C CNN
+F 1 "+1V2" H 1315 923 50  0000 C CNN
+F 2 "" H 1300 750 50  0001 C CNN
+F 3 "" H 1300 750 50  0001 C CNN
+	1    1300 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 950  1300 1050
+Wire Wire Line
+	1300 1250 1350 1250
+Connection ~ 1300 950 
+Wire Wire Line
+	1350 1150 1300 1150
+Connection ~ 1300 1150
+Wire Wire Line
+	1300 1150 1300 1250
+Wire Wire Line
+	1350 1050 1300 1050
+Connection ~ 1300 1050
+Wire Wire Line
+	1300 1050 1300 1150
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D3CBDD9
+P 1100 750
+F 0 "#PWR?" H 1100 600 50  0001 C CNN
+F 1 "+3V3" H 1115 923 50  0000 C CNN
+F 2 "" H 1100 750 50  0001 C CNN
+F 3 "" H 1100 750 50  0001 C CNN
+	1    1100 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 750  1100 1350
+Wire Wire Line
+	1100 1350 1350 1350
+Wire Wire Line
+	1350 1950 1300 1950
+Wire Wire Line
+	1300 1950 1300 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5D3E3645
+P 1300 3100
+F 0 "#PWR?" H 1300 2850 50  0001 C CNN
+F 1 "GND" H 1305 2927 50  0000 C CNN
+F 2 "" H 1300 3100 50  0001 C CNN
+F 3 "" H 1300 3100 50  0001 C CNN
+	1    1300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2050 1300 2050
+Connection ~ 1300 2050
+Wire Wire Line
+	1300 2050 1300 2150
+Wire Wire Line
+	1350 2150 1300 2150
+Connection ~ 1300 2150
+Wire Wire Line
+	1300 2150 1300 2250
+Wire Wire Line
+	1350 2250 1300 2250
+Connection ~ 1300 2250
+Wire Wire Line
+	1300 2250 1300 2350
+Wire Wire Line
+	1350 2350 1300 2350
+Connection ~ 1300 2350
+Wire Wire Line
+	1300 2350 1300 2450
+Wire Wire Line
+	1350 2450 1300 2450
+Connection ~ 1300 2450
+Wire Wire Line
+	1300 2450 1300 2550
+Wire Wire Line
+	1350 2550 1300 2550
+Connection ~ 1300 2550
+Wire Wire Line
+	1300 2550 1300 2650
+Wire Wire Line
+	1350 2650 1300 2650
+Connection ~ 1300 2650
+Wire Wire Line
+	1300 2650 1300 2750
+Wire Wire Line
+	1350 2750 1300 2750
+Connection ~ 1300 2750
+Wire Wire Line
+	1300 2750 1300 2850
+Wire Wire Line
+	1350 2850 1300 2850
+Connection ~ 1300 2850
+Wire Wire Line
+	1300 2850 1300 3100
+Text Notes 550  3850 0    50   ~ 0
+Note:\n- VPP_2V5 can be tied to 3V3 when not using NVCM\n- VPP_FAST should be floating when not programming NVCM\n- PLL GNDs are tied inside FPGA, and should *not* be tied\n  to board GND. Just exposed for bypass of PLL supply.
+$Comp
+L Device:R_Small R?
+U 1 1 5D4AF4AF
+P 750 1550
+F 0 "R?" V 650 1550 50  0000 C CNN
+F 1 "100" V 750 1550 50  0000 C CNN
+F 2 "" H 750 1550 50  0001 C CNN
+F 3 "~" H 750 1550 50  0001 C CNN
+	1    750  1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D4AF553
+P 750 1650
+F 0 "R?" V 850 1650 50  0000 C CNN
+F 1 "100" V 750 1650 50  0000 C CNN
+F 2 "" H 750 1650 50  0001 C CNN
+F 3 "~" H 750 1650 50  0001 C CNN
+	1    750  1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D4AF678
+P 1050 1800
+F 0 "C?" H 1000 1550 50  0000 L CNN
+F 1 "10u" H 1000 1450 50  0000 L CNN
+F 2 "" H 1050 1800 50  0001 C CNN
+F 3 "~" H 1050 1800 50  0001 C CNN
+	1    1050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D4AF7D8
+P 900 1800
+F 0 "C?" H 850 1550 50  0000 L CNN
+F 1 "10u" H 850 1450 50  0000 L CNN
+F 2 "" H 900 1800 50  0001 C CNN
+F 3 "~" H 900 1800 50  0001 C CNN
+	1    900  1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1750 1200 1750
+Wire Wire Line
+	1200 1750 1200 1950
+Wire Wire Line
+	1200 1950 1050 1950
+Wire Wire Line
+	1050 1950 1050 1900
+Wire Wire Line
+	1050 1700 1050 1550
+Connection ~ 1050 1550
+Wire Wire Line
+	1050 1550 1350 1550
+Wire Wire Line
+	850  1650 900  1650
+Wire Wire Line
+	850  1550 1050 1550
+Wire Wire Line
+	900  1700 900  1650
+Connection ~ 900  1650
+Wire Wire Line
+	900  1650 1350 1650
+Wire Wire Line
+	1350 1850 1250 1850
+Wire Wire Line
+	1250 1850 1250 2000
+Wire Wire Line
+	1250 2000 900  2000
+Wire Wire Line
+	900  2000 900  1900
+Wire Wire Line
+	650  1550 600  1550
+Wire Wire Line
+	600  1550 600  750 
+Wire Wire Line
+	650  1650 600  1650
+Wire Wire Line
+	600  1650 600  1550
+Connection ~ 600  1550
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5D53FE5B
+P 600 750
+F 0 "#PWR?" H 600 600 50  0001 C CNN
+F 1 "+1V2" H 615 923 50  0000 C CNN
+F 2 "" H 600 750 50  0001 C CNN
+F 3 "" H 600 750 50  0001 C CNN
+	1    600  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_hat:IS61WV25616 U?
+U 1 1 5D1927A7
+P 7350 6500
+F 0 "U?" H 7350 7915 50  0000 C CNN
+F 1 "IS61WV25616" H 7350 7824 50  0000 C CNN
+F 2 "" H 7450 7500 50  0001 C CNN
+F 3 "" H 7450 7500 50  0001 C CNN
+	1    7350 6500
+	1    0    0    -1  
+$EndComp
+Text Notes 6800 5000 0    50   ~ 0
+512 kB (256k x 16b) Async SRAM
 $EndSCHEMATC
