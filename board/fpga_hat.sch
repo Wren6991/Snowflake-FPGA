@@ -977,21 +977,6 @@ F 3 "" H 8250 8100 50  0001 C CNN
 	1    8250 8100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR060
-U 1 1 5D1B5A98
-P 9250 8100
-F 0 "#PWR060" H 9250 7850 50  0001 C CNN
-F 1 "GND" H 9255 7927 50  0000 C CNN
-F 2 "" H 9250 8100 50  0001 C CNN
-F 3 "" H 9250 8100 50  0001 C CNN
-	1    9250 8100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 7900 9250 7900
-Wire Wire Line
-	9250 7900 9250 8100
 Wire Wire Line
 	9050 7700 9250 7700
 Wire Wire Line
@@ -999,40 +984,40 @@ Wire Wire Line
 $Comp
 L Device:C C16
 U 1 1 5D1BD1CA
-P 8000 7800
-F 0 "C16" H 8115 7846 50  0000 L CNN
-F 1 "1u" H 8115 7755 50  0000 L CNN
-F 2 "" H 8038 7650 50  0001 C CNN
-F 3 "~" H 8000 7800 50  0001 C CNN
-	1    8000 7800
+P 7900 7800
+F 0 "C16" H 8015 7846 50  0000 L CNN
+F 1 "1u" H 8015 7755 50  0000 L CNN
+F 2 "" H 7938 7650 50  0001 C CNN
+F 3 "~" H 7900 7800 50  0001 C CNN
+	1    7900 7800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR046
 U 1 1 5D1BD21A
-P 8000 7550
-F 0 "#PWR046" H 8000 7400 50  0001 C CNN
-F 1 "+5V" H 8015 7723 50  0000 C CNN
-F 2 "" H 8000 7550 50  0001 C CNN
-F 3 "" H 8000 7550 50  0001 C CNN
-	1    8000 7550
+P 7900 7550
+F 0 "#PWR046" H 7900 7400 50  0001 C CNN
+F 1 "+5V" H 7915 7723 50  0000 C CNN
+F 2 "" H 7900 7550 50  0001 C CNN
+F 3 "" H 7900 7550 50  0001 C CNN
+	1    7900 7550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR047
 U 1 1 5D1BD25B
-P 8000 8100
-F 0 "#PWR047" H 8000 7850 50  0001 C CNN
-F 1 "GND" H 8005 7927 50  0000 C CNN
-F 2 "" H 8000 8100 50  0001 C CNN
-F 3 "" H 8000 8100 50  0001 C CNN
-	1    8000 8100
+P 7900 8100
+F 0 "#PWR047" H 7900 7850 50  0001 C CNN
+F 1 "GND" H 7905 7927 50  0000 C CNN
+F 2 "" H 7900 8100 50  0001 C CNN
+F 3 "" H 7900 8100 50  0001 C CNN
+	1    7900 8100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 7650 8000 7550
+	7900 7650 7900 7550
 Wire Wire Line
-	8000 7950 8000 8100
+	7900 7950 7900 8100
 $Comp
 L power:+3.3VDAC #PWR064
 U 1 1 5D1C4D7E
@@ -2718,8 +2703,8 @@ Text Label 15200 6500 2    50   ~ 0
 SW6
 Text Label 15200 6800 2    50   ~ 0
 SW7
-Text Notes 12900 5650 0    50   ~ 0
-User pushbuttons and blinkenlights (GREEN LEDs)
+Text Notes 12900 5550 0    50   ~ 0
+User pushbuttons and blinkenlights (GREEN LEDs)\nButton pullups are provided by FPGA pads
 Text Notes 8200 7150 0    50   ~ 0
 Audio LDO\n(The Pi's 3V3 is used instead for VDDIO,\nand downstream PMOD power.)
 $Comp
@@ -3576,4 +3561,9 @@ Wire Wire Line
 	1200 1950 1200 2100
 Wire Wire Line
 	1350 1950 1350 2000
+Wire Wire Line
+	8450 7800 8250 7800
+Wire Wire Line
+	8250 7800 8250 7700
+Connection ~ 8250 7700
 $EndSCHEMATC
