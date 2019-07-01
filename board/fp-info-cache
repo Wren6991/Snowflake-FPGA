@@ -1,4 +1,4 @@
-19364213842797
+19362804892053
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (http://www.bulgin.com/media/bulgin/data/Battery_holders.pdf)
@@ -43315,6 +43315,13 @@ LGA4_1.6x1.2mm
 0
 4
 4
+fpga_hat
+MOUNTHOLE_M2.5
+
+
+0
+1
+1
 fpga_hat
 SOLDER_JUMP
 
