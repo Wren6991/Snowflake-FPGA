@@ -1,4 +1,4 @@
-19362804892053
+19361394747309
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (http://www.bulgin.com/media/bulgin/data/Battery_holders.pdf)
@@ -43320,8 +43320,15 @@ MOUNTHOLE_M2.5
 
 
 0
-1
-1
+0
+0
+fpga_hat
+PinSocket_2x06_P2.54mm_Horizontal
+Through hole angled socket strip, 2x06, 2.54mm pitch, 8.51mm socket length, double cols (from Kicad 4.0.7), script generated
+Through hole angled socket strip THT 2x06 2.54mm double row
+0
+12
+12
 fpga_hat
 SOLDER_JUMP
 

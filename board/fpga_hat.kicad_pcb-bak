@@ -2,10 +2,10 @@
 
   (general
     (thickness 1.6)
-    (drawings 16)
+    (drawings 20)
     (tracks 0)
     (zones 0)
-    (modules 0)
+    (modules 4)
     (nets 1)
   )
 
@@ -101,6 +101,62 @@
     (uvia_drill 0.1)
   )
 
+  (module fpga_hat:MOUNTHOLE_M2.5 (layer F.Cu) (tedit 5D1992BB) (tstamp 5D1F791C)
+    (at 161.5 83.5)
+    (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.1 0.1) (thickness 0.15)))
+    )
+    (fp_text value MOUNTHOLE_M2.5 (at 0 0.2) (layer F.Fab) hide
+      (effects (font (size 0.1 0.1) (thickness 0.025)))
+    )
+    (fp_circle (center 0 0) (end 3.1 -0.1) (layer F.CrtYd) (width 0.12))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask)
+      (solder_mask_margin 1.725) (zone_connect 0) (thermal_gap 1.9))
+  )
+
+  (module fpga_hat:MOUNTHOLE_M2.5 (layer F.Cu) (tedit 5D1992BB) (tstamp 5D1F7912)
+    (at 161.5 133)
+    (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.1 0.1) (thickness 0.15)))
+    )
+    (fp_text value MOUNTHOLE_M2.5 (at 0 0.2) (layer F.Fab) hide
+      (effects (font (size 0.1 0.1) (thickness 0.025)))
+    )
+    (fp_circle (center 0 0) (end 3.1 -0.1) (layer F.CrtYd) (width 0.12))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask)
+      (solder_mask_margin 1.725) (zone_connect 0) (thermal_gap 1.9))
+  )
+
+  (module fpga_hat:MOUNTHOLE_M2.5 (layer F.Cu) (tedit 5D1992BB) (tstamp 5D1F7908)
+    (at 103.5 133)
+    (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.1 0.1) (thickness 0.15)))
+    )
+    (fp_text value MOUNTHOLE_M2.5 (at 0 0.2) (layer F.Fab) hide
+      (effects (font (size 0.1 0.1) (thickness 0.025)))
+    )
+    (fp_circle (center 0 0) (end 3.1 -0.1) (layer F.CrtYd) (width 0.12))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask)
+      (solder_mask_margin 1.725) (zone_connect 0) (thermal_gap 1.9))
+  )
+
+  (module fpga_hat:MOUNTHOLE_M2.5 (layer F.Cu) (tedit 5D1992BB) (tstamp 5D1F7904)
+    (at 103.5 83.5)
+    (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.1 0.1) (thickness 0.15)))
+    )
+    (fp_text value MOUNTHOLE_M2.5 (at 0 0.2) (layer F.Fab) hide
+      (effects (font (size 0.1 0.1) (thickness 0.025)))
+    )
+    (fp_circle (center 0 0) (end 3.1 -0.1) (layer F.CrtYd) (width 0.12))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask)
+      (solder_mask_margin 1.725) (zone_connect 0) (thermal_gap 1.9))
+  )
+
+  (gr_line (start 144 117.5) (end 144 132.5) (layer Edge.Cuts) (width 0.05) (tstamp 5D1E926C))
+  (gr_line (start 146 132.5) (end 146 117.5) (layer Edge.Cuts) (width 0.05) (tstamp 5D1E926B))
+  (gr_arc (start 145 117.5) (end 146 117.5) (angle -180) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 145 132.5) (end 144 132.5) (angle -180) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 100 99) (end 100 83) (layer Edge.Cuts) (width 0.05) (tstamp 5D1E9267))
   (gr_line (start 100 133.5) (end 100 118) (layer Edge.Cuts) (width 0.05) (tstamp 5D1E9266))
   (gr_line (start 101 117) (end 104 117) (layer Edge.Cuts) (width 0.05) (tstamp 5D1E925E))

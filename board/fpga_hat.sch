@@ -232,7 +232,7 @@ U 1 1 5D15B98E
 P 14550 1550
 F 0 "J3" H 14600 1875 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 14600 1876 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 14550 1550 50  0001 C CNN
+F 2 "fpga_hat:PinSocket_2x06_P2.54mm_Horizontal" H 14550 1550 50  0001 C CNN
 F 3 "~" H 14550 1550 50  0001 C CNN
 	1    14550 1550
 	1    0    0    -1  
@@ -374,7 +374,7 @@ U 1 1 5D1621EF
 P 14550 3100
 F 0 "J4" H 14600 3425 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 14600 3426 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 14550 3100 50  0001 C CNN
+F 2 "fpga_hat:PinSocket_2x06_P2.54mm_Horizontal" H 14550 3100 50  0001 C CNN
 F 3 "~" H 14550 3100 50  0001 C CNN
 	1    14550 3100
 	1    0    0    -1  
@@ -514,7 +514,7 @@ U 1 1 5D1630CA
 P 14550 4550
 F 0 "J5" H 14600 4875 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 14600 4876 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 14550 4550 50  0001 C CNN
+F 2 "fpga_hat:PinSocket_2x06_P2.54mm_Horizontal" H 14550 4550 50  0001 C CNN
 F 3 "~" H 14550 4550 50  0001 C CNN
 	1    14550 4550
 	1    0    0    -1  
