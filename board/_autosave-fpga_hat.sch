@@ -1820,7 +1820,7 @@ Text Label 5850 2200 2    50   ~ 0
 SRAM_DQ3
 Text Label 5850 2500 2    50   ~ 0
 SRAM_DQ4
-Text Label 7400 1800 2    50   ~ 0
+Text Label 5850 2300 2    50   ~ 0
 SRAM_DQ5
 Text Label 7400 3000 2    50   ~ 0
 SRAM_DQ6
@@ -1901,7 +1901,7 @@ Wire Wire Line
 	5950 2200 5850 2200
 Text Label 7400 1700 2    50   ~ 0
 SRAM_A10
-Text Label 5850 2300 2    50   ~ 0
+Text Label 7400 1800 2    50   ~ 0
 SRAM_A11
 Text Label 7400 2300 2    50   ~ 0
 SRAM_A12
@@ -3768,11 +3768,11 @@ Text Label 7400 3600 2    50   ~ 0
 SRAM_A0
 Text Label 5850 1600 2    50   ~ 0
 SRAM_A5
-Text Label 5850 2400 2    50   ~ 0
+Text Label 7400 3900 2    50   ~ 0
 SRAM_A3
 Text Label 7400 3500 2    50   ~ 0
 SRAM_~OE
-Text Label 7400 3900 2    50   ~ 0
+Text Label 5850 2400 2    50   ~ 0
 SRAM_A16
 Text Label 7400 2600 2    50   ~ 0
 SRAM_DQ13
@@ -3780,4 +3780,6 @@ Text Label 7400 4000 2    50   ~ 0
 SRAM_A17
 Text Label 7400 2500 2    50   ~ 0
 SRAM_A8
+Text Notes 4400 4000 0    50   ~ 0
+Note: the FPGA IOs have been heavily pin-swapped\nto make routing less tight.
 $EndSCHEMATC

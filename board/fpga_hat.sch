@@ -1810,37 +1810,35 @@ Wire Wire Line
 	7500 3000 7400 3000
 Wire Wire Line
 	7500 3100 7400 3100
-Text Label 7400 1600 2    50   ~ 0
+Text Label 5850 1500 2    50   ~ 0
 SRAM_DQ0
-Text Label 7400 1700 2    50   ~ 0
+Text Label 5850 2000 2    50   ~ 0
 SRAM_DQ1
-Text Label 7400 1800 2    50   ~ 0
+Text Label 5850 1900 2    50   ~ 0
 SRAM_DQ2
-Text Label 7400 1900 2    50   ~ 0
+Text Label 5850 2200 2    50   ~ 0
 SRAM_DQ3
-Text Label 7400 2000 2    50   ~ 0
+Text Label 5850 2500 2    50   ~ 0
 SRAM_DQ4
-Text Label 7400 2100 2    50   ~ 0
+Text Label 5850 2300 2    50   ~ 0
 SRAM_DQ5
-Text Label 7400 2200 2    50   ~ 0
-SRAM_DQ6
-Text Label 7400 2300 2    50   ~ 0
-SRAM_DQ7
-Text Label 7400 2400 2    50   ~ 0
-SRAM_DQ8
-Text Label 7400 2500 2    50   ~ 0
-SRAM_DQ9
-Text Label 7400 2600 2    50   ~ 0
-SRAM_DQ10
-Text Label 7400 4100 2    50   ~ 0
-SRAM_DQ11
-Text Label 7400 3200 2    50   ~ 0
-SRAM_DQ12
-Text Label 7400 2900 2    50   ~ 0
-SRAM_DQ13
 Text Label 7400 3000 2    50   ~ 0
-SRAM_DQ14
+SRAM_DQ6
+Text Label 5850 2600 2    50   ~ 0
+SRAM_DQ7
+Text Label 7400 4100 2    50   ~ 0
+SRAM_DQ8
+Text Label 7400 2900 2    50   ~ 0
+SRAM_DQ9
 Text Label 7400 3100 2    50   ~ 0
+SRAM_DQ10
+Text Label 7400 3200 2    50   ~ 0
+SRAM_DQ11
+Text Label 7400 2800 2    50   ~ 0
+SRAM_DQ12
+Text Label 7400 2200 2    50   ~ 0
+SRAM_DQ14
+Text Label 7400 2400 2    50   ~ 0
 SRAM_DQ15
 Wire Wire Line
 	7500 3200 7400 3200
@@ -1862,25 +1860,17 @@ Wire Wire Line
 	7500 4000 7400 4000
 Wire Wire Line
 	7500 4100 7400 4100
-Text Label 7400 2800 2    50   ~ 0
-SRAM_A0
-Text Label 7400 3300 2    50   ~ 0
-SRAM_A1
-Text Label 7400 3400 2    50   ~ 0
-SRAM_A2
-Text Label 7400 3500 2    50   ~ 0
-SRAM_A3
-Text Label 7400 3600 2    50   ~ 0
-SRAM_A4
-Text Label 7400 3700 2    50   ~ 0
-SRAM_A5
 Text Label 7400 3800 2    50   ~ 0
+SRAM_A1
+Text Label 5850 1800 2    50   ~ 0
+SRAM_A2
+Text Label 7400 3700 2    50   ~ 0
+SRAM_A4
+Text Label 5850 1700 2    50   ~ 0
 SRAM_A6
-Text Label 7400 3900 2    50   ~ 0
+Text Label 5850 2100 2    50   ~ 0
 SRAM_A7
-Text Label 7400 4000 2    50   ~ 0
-SRAM_A8
-Text Label 7400 2700 2    50   ~ 0
+Text Label 7400 2100 2    50   ~ 0
 SRAM_A9
 $Comp
 L fpga_hat:iCE40-HX8k-BG121 U1
@@ -1909,22 +1899,18 @@ Wire Wire Line
 	5950 2100 5850 2100
 Wire Wire Line
 	5950 2200 5850 2200
-Text Label 5850 1500 2    50   ~ 0
+Text Label 7400 1700 2    50   ~ 0
 SRAM_A10
-Text Label 5850 1600 2    50   ~ 0
+Text Label 7400 1800 2    50   ~ 0
 SRAM_A11
-Text Label 5850 1700 2    50   ~ 0
+Text Label 7400 2300 2    50   ~ 0
 SRAM_A12
-Text Label 5850 1800 2    50   ~ 0
+Text Label 7400 2000 2    50   ~ 0
 SRAM_A13
-Text Label 5850 1900 2    50   ~ 0
+Text Label 7400 2700 2    50   ~ 0
 SRAM_A14
-Text Label 5850 2000 2    50   ~ 0
+Text Label 7400 1900 2    50   ~ 0
 SRAM_A15
-Text Label 5850 2100 2    50   ~ 0
-SRAM_A16
-Text Label 5850 2200 2    50   ~ 0
-SRAM_A17
 Wire Wire Line
 	5950 2300 5850 2300
 Wire Wire Line
@@ -1933,13 +1919,11 @@ Wire Wire Line
 	5950 2500 5850 2500
 Wire Wire Line
 	5950 2600 5850 2600
-Text Label 5850 2300 2    50   ~ 0
+Text Label 7400 1600 2    50   ~ 0
 SRAM_~WE
-Text Label 5850 2400 2    50   ~ 0
-SRAM_~OE
-Text Label 5850 2500 2    50   ~ 0
+Text Label 7400 3400 2    50   ~ 0
 SRAM_~UB
-Text Label 5850 2600 2    50   ~ 0
+Text Label 7400 3300 2    50   ~ 0
 SRAM_~LB
 Wire Wire Line
 	13000 3200 13050 3200
@@ -3780,4 +3764,20 @@ F 3 "~" H 3600 5900 50  0001 C CNN
 	1    3600 5900
 	1    0    0    -1  
 $EndComp
+Text Label 7400 3600 2    50   ~ 0
+SRAM_A0
+Text Label 5850 1600 2    50   ~ 0
+SRAM_A5
+Text Label 7400 3900 2    50   ~ 0
+SRAM_A3
+Text Label 7400 3500 2    50   ~ 0
+SRAM_~OE
+Text Label 5850 2400 2    50   ~ 0
+SRAM_A16
+Text Label 7400 2600 2    50   ~ 0
+SRAM_DQ13
+Text Label 7400 4000 2    50   ~ 0
+SRAM_A17
+Text Label 7400 2500 2    50   ~ 0
+SRAM_A8
 $EndSCHEMATC
