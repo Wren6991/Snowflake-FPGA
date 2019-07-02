@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # Script for creating "time lapse"
-# Creates a timestamped copy each time a file changes
-# e.g.
-# watch board/fpga_hat.kicad_pcb
+# Creates a timestamped copy each time a file changes e.g.
+# ./watch board/fpga_hat.kicad_pcb
 # These files will be processed later to create a time lapse video.
 
 mkdir -p timelapse
@@ -13,6 +12,7 @@ if [ -z "$1" ]; then
 	exit -1
 fi
 
-while inotifywait -e modify,close,create $1; do
+while inotifywait -e modify,close $1 || true; do
+	echo "Capturing $1 at $(date +'%F %T')"
 	cp $1 timelapse/$(date +%F_%T)_$(basename $1)
 done
