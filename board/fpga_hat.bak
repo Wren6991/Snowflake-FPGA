@@ -60,17 +60,6 @@ Connection ~ 4050 9700
 Wire Wire Line
 	4050 9700 4050 9600
 $Comp
-L Device:C C10
-U 1 1 5D159087
-P 3600 9700
-F 0 "C10" H 3715 9746 50  0000 L CNN
-F 1 "100n" H 3715 9655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3638 9550 50  0001 C CNN
-F 3 "~" H 3600 9700 50  0001 C CNN
-	1    3600 9700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR024
 U 1 1 5D15910A
 P 3600 8950
@@ -3165,17 +3154,6 @@ F 3 "~" H 4000 5900 50  0001 C CNN
 	1    4000 5900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C9
-U 1 1 5E1609B9
-P 3600 5900
-F 0 "C9" H 3715 5946 50  0000 L CNN
-F 1 "100n" H 3715 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3638 5750 50  0001 C CNN
-F 3 "~" H 3600 5900 50  0001 C CNN
-	1    3600 5900
-	1    0    0    -1  
-$EndComp
 Text Notes 11250 5200 0    50   ~ 0
 Button + LED for FPGA reset + configuration (RED LED)\n\n
 $Comp
@@ -3706,7 +3684,7 @@ U 1 1 600FD924
 P 14750 5950
 F 0 "J6" H 14830 5942 50  0000 L CNN
 F 1 "Conn_01x02" H 14830 5851 50  0000 L CNN
-F 2 "" H 14750 5950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14750 5950 50  0001 C CNN
 F 3 "~" H 14750 5950 50  0001 C CNN
 	1    14750 5950
 	1    0    0    -1  
@@ -3780,4 +3758,26 @@ F 3 "" H 14500 5750 50  0001 C CNN
 $EndComp
 Text Notes 14450 5400 0    50   ~ 0
 5V header between IO0 and IO1\nUseful for some PMODs!
+$Comp
+L Device:C C10
+U 1 1 5D159087
+P 3600 9700
+F 0 "C10" H 3715 9746 50  0000 L CNN
+F 1 "100n" H 3715 9655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3638 9550 50  0001 C CNN
+F 3 "~" H 3600 9700 50  0001 C CNN
+	1    3600 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5E1609B9
+P 3600 5900
+F 0 "C9" H 3715 5946 50  0000 L CNN
+F 1 "100n" H 3715 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3638 5750 50  0001 C CNN
+F 3 "~" H 3600 5900 50  0001 C CNN
+	1    3600 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
