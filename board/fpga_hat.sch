@@ -2089,51 +2089,49 @@ Wire Wire Line
 	2750 3700 2650 3700
 Text Label 2650 2100 2    50   ~ 0
 IO0_0
-Text Label 2650 1600 2    50   ~ 0
+Text Label 2650 2300 2    50   ~ 0
 IO0_1
-Text Label 2650 1700 2    50   ~ 0
+Text Label 2650 2000 2    50   ~ 0
 IO0_2
-Text Label 2650 1800 2    50   ~ 0
+Text Label 2650 1600 2    50   ~ 0
 IO0_3
 Text Label 2650 2500 2    50   ~ 0
 IO0_4
-Text Label 2650 2000 2    50   ~ 0
-IO0_5
-Text Label 2650 1500 2    50   ~ 0
-IO0_6
-Text Label 4250 1700 2    50   ~ 0
-IO0_7
-Text Label 2650 2300 2    50   ~ 0
-IO1_0
-Text Label 5850 2700 2    50   ~ 0
-IO1_1
 Text Label 2650 1900 2    50   ~ 0
+IO0_5
+Text Label 2650 1700 2    50   ~ 0
+IO0_6
+Text Label 2650 1800 2    50   ~ 0
+IO0_7
+Text Label 4250 2800 2    50   ~ 0
+IO1_0
+Text Label 4250 3100 2    50   ~ 0
+IO1_1
+Text Label 4250 3000 2    50   ~ 0
 IO1_2
-Text Label 4250 1600 2    50   ~ 0
+Text Label 4250 2900 2    50   ~ 0
 IO1_3
-Text Label 4250 2500 2    50   ~ 0
+Text Label 2650 1500 2    50   ~ 0
 IO1_4
-Text Label 4250 1800 2    50   ~ 0
+Text Label 4250 3300 2    50   ~ 0
 IO1_5
 Text Label 4250 2600 2    50   ~ 0
-IO1_6
-Text Label 5850 2400 2    50   ~ 0
 IO1_7
-Text Label 4250 1900 2    50   ~ 0
+Text Label 4250 2400 2    50   ~ 0
 IO2_0
-Text Label 4250 2700 2    50   ~ 0
+Text Label 4250 2500 2    50   ~ 0
 IO2_1
-Text Label 5850 2300 2    50   ~ 0
+Text Label 4250 2300 2    50   ~ 0
 IO2_2
-Text Label 5850 2500 2    50   ~ 0
+Text Label 4250 1900 2    50   ~ 0
 IO2_3
-Text Label 5850 2600 2    50   ~ 0
+Text Label 4250 2700 2    50   ~ 0
 IO2_4
 Text Label 4250 3400 2    50   ~ 0
 IO2_5
-Text Label 4250 2400 2    50   ~ 0
+Text Label 4250 2100 2    50   ~ 0
 IO2_6
-Text Label 4250 1500 2    50   ~ 0
+Text Label 4250 2200 2    50   ~ 0
 IO2_7
 Wire Wire Line
 	4250 1500 4350 1500
@@ -2183,13 +2181,11 @@ Text Label 2650 2800 2    50   ~ 0
 LED2
 Text Label 2650 3100 2    50   ~ 0
 LED3
-Text Label 4250 2000 2    50   ~ 0
+Text Label 5850 2300 2    50   ~ 0
 LED4
-Text Label 4250 2100 2    50   ~ 0
-LED5
-Text Label 4250 2200 2    50   ~ 0
+Text Label 4250 1500 2    50   ~ 0
 LED6
-Text Label 4250 2300 2    50   ~ 0
+Text Label 4250 2000 2    50   ~ 0
 LED7
 Text Label 2650 3700 2    50   ~ 0
 SW0
@@ -2199,29 +2195,27 @@ Text Label 2650 2900 2    50   ~ 0
 SW2
 Text Label 7400 1800 2    50   ~ 0
 SW3
-Text Label 4250 2800 2    50   ~ 0
+Text Label 5850 2400 2    50   ~ 0
 SW4
-Text Label 4250 2900 2    50   ~ 0
+Text Label 5850 2600 2    50   ~ 0
 SW5
-Text Label 4250 3000 2    50   ~ 0
+Text Label 4250 1600 2    50   ~ 0
 SW6
-Text Label 4250 3100 2    50   ~ 0
-SW7
-Text Label 5850 2900 2    50   ~ 0
-GP23_SDIO_CMD
-Text Label 5850 3000 2    50   ~ 0
-GP24_SDIO_DAT0
 Text Label 5850 3100 2    50   ~ 0
-GP25_SDIO_DAT1
+SW7
 Text Label 5850 2800 2    50   ~ 0
+GP23_SDIO_CMD
+Text Label 5850 2900 2    50   ~ 0
+GP24_SDIO_DAT0
+Text Label 5850 2700 2    50   ~ 0
+GP25_SDIO_DAT1
+Text Label 5850 3000 2    50   ~ 0
 GP27_SDIO_DAT3
 Text Label 5850 3300 2    50   ~ 0
 GP22_SDIO_CLK
-Text Label 5850 3200 2    50   ~ 0
+Text Label 5850 2500 2    50   ~ 0
 GP26_SDIO_DAT2
-Text Label 4250 3200 2    50   ~ 0
-GP14_UART_TXD
-Text Label 4250 3300 2    50   ~ 0
+Text Label 4250 1800 2    50   ~ 0
 GP15_UART_RXD
 Text Label 4250 3500 2    50   ~ 0
 CLK_OSC
@@ -3784,4 +3778,10 @@ Text Notes 6100 800  0    50   ~ 0
 Note: the FPGA IOs have been heavily pin-swapped\nto make routing less tight. Sorry :'(
 Text Notes 5650 3600 0    50   ~ 0
 SDIO CLK must be on a GBIN\n
+Text Label 4250 3200 2    50   ~ 0
+IO1_6
+Text Label 4250 1700 2    50   ~ 0
+GP14_UART_TXD
+Text Label 5850 3200 2    50   ~ 0
+LED5
 $EndSCHEMATC
