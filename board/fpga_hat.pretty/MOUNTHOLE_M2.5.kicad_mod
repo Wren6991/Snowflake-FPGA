@@ -1,4 +1,4 @@
-(module MOUNTHOLE_M2.5 (layer F.Cu) (tedit 5D1992BB)
+(module MOUNTHOLE_M2.5 (layer F.Cu) (tedit 5D20926A)
   (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
     (effects (font (size 0.1 0.1) (thickness 0.15)))
   )
@@ -7,5 +7,5 @@
   )
   (fp_circle (center 0 0) (end 3.1 -0.1) (layer F.CrtYd) (width 0.12))
   (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask)
-    (solder_mask_margin 1.725) (zone_connect 0) (thermal_gap 1.9))
+    (solder_mask_margin 1.725) (clearance 1.9) (zone_connect 0) (thermal_gap 1.9))
 )
