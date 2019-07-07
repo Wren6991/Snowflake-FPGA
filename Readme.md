@@ -1,5 +1,5 @@
-FPGA HAT
-=========
+Snowflake FPGA HAT
+==================
 
 As an experiment, I am designing a PCB using only my Pi 4 4GB. Any other machine is off-limits. This includes
 
@@ -7,11 +7,11 @@ As an experiment, I am designing a PCB using only my Pi 4 4GB. Any other machine
 - Layout
 - Datasheets and reference material
 - Background Twitter browsing
-- The below rendering:
+- Rendering PCB glamour shots:
 
 ![Rendering of PCB](board/pcb_render.png)
 
-The board is a HAT (Raspberry Pi addon board) with a iCE40 HX8k FPGA. The Pi can program the FPGA, and communicate with it via a UART, or a fast bidirectional SDIO link. This project was spurred by the realisation that Pi 4 is a plausible FPGA development platform: faster processors, increased memory, and above all, the dramatic improvements in [Symbiotic EDA](https://www.symbioticeda.com/)'s open source design flows in the last few years.
+This is a HAT (Raspberry Pi addon board) with an iCE40 HX8k FPGA. The Pi can program the FPGA, and communicate with it via a UART, or a fast, bidirectional SDIO link. This project was spurred by the realisation that Pi 4 is a plausible FPGA development platform: faster processors, expanded memory and, above all, dramatic improvements in [Symbiotic EDA](https://www.symbioticeda.com/)'s open source design flows in the last few years.
 
 [View schematic (PDF)](board/fpga_hat.pdf)
 
@@ -22,7 +22,7 @@ Features
 --------
 
 - iCE40 HX8k
-- 4 Mbit SRAM, 16 bit wide, 10 ns access
+- 4 Mbit SRAM 16 bit wide, 10 ns access
 - 4 Mbit flash for FPGA image and user data; dual I/O support
 - 3 PMOD-compatible expansion headers
     - 8 3.3V IOs each, plus power and ground
