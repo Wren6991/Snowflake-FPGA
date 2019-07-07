@@ -2620,12 +2620,8 @@ F 3 "" H 5550 5850 50  0001 C CNN
 	1    5650 5850
 	1    0    0    -1  
 $EndComp
-Text Notes 4650 6850 0    50   ~ 0
-This is just the reference circuit.\nReference layout shows AGND tied to the under-pad ONLY,\nand PGND tied to bypass, board GND and the under-pad.
-Wire Wire Line
-	5300 5700 5200 5700
-Wire Wire Line
-	5200 5700 5200 5600
+Text Notes 4650 7250 0    50   ~ 0
+This is just the reference circuit.\nReference layout shows AGND tied to the under-pad ONLY,\nand PGND tied to bypass, board GND and the under-pad.\n\nNote: EN is tied to the Pi's 3V3 supply (== iCE40 VDDIO).\nPi's 3V3 is downstream of 5V, and iCE40 requires highest-\nrail-first staging. If EN were tied to 5V there would be a race\nbetween 1V2 and 3V3. EN's max VIH is 1.2V.
 $Comp
 L power:+5V #PWR034
 U 1 1 5D47B3CD
@@ -2639,9 +2635,6 @@ F 3 "" H 5200 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5200 5600 5300 5600
-Connection ~ 5200 5600
-Wire Wire Line
-	5200 5600 5200 5400
 Wire Wire Line
 	5300 6050 5200 6050
 Wire Wire Line
@@ -2696,34 +2689,34 @@ Connection ~ 6200 5700
 $Comp
 L Device:C C12
 U 1 1 5D6416F7
-P 4900 5900
-F 0 "C12" H 5015 5946 50  0000 L CNN
-F 1 "4u7" H 5015 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 5750 50  0001 C CNN
-F 3 "~" H 4900 5900 50  0001 C CNN
-	1    4900 5900
+P 4800 5900
+F 0 "C12" H 4915 5946 50  0000 L CNN
+F 1 "4u7" H 4915 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4838 5750 50  0001 C CNN
+F 3 "~" H 4800 5900 50  0001 C CNN
+	1    4800 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR033
 U 1 1 5D68279F
-P 4900 6350
-F 0 "#PWR033" H 4900 6100 50  0001 C CNN
-F 1 "GND" H 4905 6177 50  0000 C CNN
-F 2 "" H 4900 6350 50  0001 C CNN
-F 3 "" H 4900 6350 50  0001 C CNN
-	1    4900 6350
+P 4800 6350
+F 0 "#PWR033" H 4800 6100 50  0001 C CNN
+F 1 "GND" H 4805 6177 50  0000 C CNN
+F 2 "" H 4800 6350 50  0001 C CNN
+F 3 "" H 4800 6350 50  0001 C CNN
+	1    4800 6350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR032
 U 1 1 5D682CBC
-P 4900 5400
-F 0 "#PWR032" H 4900 5250 50  0001 C CNN
-F 1 "+5V" H 4915 5573 50  0000 C CNN
-F 2 "" H 4900 5400 50  0001 C CNN
-F 3 "" H 4900 5400 50  0001 C CNN
-	1    4900 5400
+P 4800 5400
+F 0 "#PWR032" H 4800 5250 50  0001 C CNN
+F 1 "+5V" H 4815 5573 50  0000 C CNN
+F 2 "" H 4800 5400 50  0001 C CNN
+F 3 "" H 4800 5400 50  0001 C CNN
+	1    4800 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2749,9 +2742,9 @@ F 3 "" H 6600 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 5400 4900 5750
+	4800 5400 4800 5750
 Wire Wire Line
-	4900 6050 4900 6350
+	4800 6050 4800 6350
 Wire Wire Line
 	6600 5700 6600 5600
 Wire Wire Line
@@ -3022,12 +3015,12 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR026
 U 1 1 5DE9996B
-P 4000 5650
-F 0 "#PWR026" H 4000 5500 50  0001 C CNN
-F 1 "+3V3" H 4015 5823 50  0000 C CNN
-F 2 "" H 4000 5650 50  0001 C CNN
-F 3 "" H 4000 5650 50  0001 C CNN
-	1    4000 5650
+P 5000 5400
+F 0 "#PWR026" H 5000 5250 50  0001 C CNN
+F 1 "+3V3" H 5015 5573 50  0000 C CNN
+F 2 "" H 5000 5400 50  0001 C CNN
+F 3 "" H 5000 5400 50  0001 C CNN
+	1    5000 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3827,4 +3820,21 @@ Wire Wire Line
 	5750 8950 5750 9050
 Wire Wire Line
 	5450 8950 5450 9050
+Wire Wire Line
+	5000 5700 5000 5400
+Wire Wire Line
+	5000 5700 5300 5700
+Wire Wire Line
+	5200 5400 5200 5600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D3C8D47
+P 4000 5650
+F 0 "#PWR?" H 4000 5500 50  0001 C CNN
+F 1 "+3V3" H 4015 5823 50  0000 C CNN
+F 2 "" H 4000 5650 50  0001 C CNN
+F 3 "" H 4000 5650 50  0001 C CNN
+	1    4000 5650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
