@@ -48,3 +48,21 @@ The capability requirements for this board are:
 - Copper min width 0.09 mm
 - Copper-copper clearance 0.09 mm
 - Solder mask expansion 0.05 mm
+
+Stackup
+-------
+
+This is a 4-layer board.
+
+- L1: signal, GND fill
+- L2: GND plane
+- L3: Power polygons (+5V, +3V3, +1V2)
+- L4: signal, GND fill
+
+All layers 1 oz/sqft copper. Assumed stacking for FR4 layers:
+
+- L1-L2 0.2 mm prepreg
+- L2-L3 1.2 mm core
+- L3-L4 0.2 mm prepreg
+
+These dimensions are not critical. Signal integrity will be improved by minimising separation of L1-L2, but none of the routing is impedance-controlled.
